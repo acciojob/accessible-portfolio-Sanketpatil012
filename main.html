@@ -5,17 +5,39 @@
 <title>ARIA</title>
 
 <body>
-<h1 role="heading">ARIA role</h1>	 
- <nav role="navigation">Image</nav> 
- <img  src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" alt="A beautiful landscape">	
-  <summary>
-	 ARIA role is used by the disable people to know the things.  
-  </summary>
-  <ul role="list">
-	  <li role="listitem">Hi</li>
-      <li role="listitem">I am Sanket</li>  
-	  <li role="listitem">My Surname is Patil </li>  
-  </ul>
+ <header>
+    <h1 role="heading" aria-level="1">Sanket Patil's Portfolio</h1>
+  </header>
+
+  <!-- Navigation with ARIA role -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About Me</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <img src="profile.jpg" alt="Profile picture of Sanket Patil" role="img">
+    <p>I am a MERN stack developer with a passion for building accessible, user-friendly applications. I specialize in React, Node.js, Express.js, and MongoDB.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 role="heading" aria-level="2">Projects</h2>
+    <ul role="list">
+      <li role="listitem">Food Delivery App: Built with React, Node.js, and MongoDB.</li>
+      <li role="listitem">Video Streaming App: Developed using React, CSS, and Express.js.</li>
+      <li role="listitem">Portfolio Website: Designed with HTML, CSS, and accessible features.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact me: <a href="mailto:sanket@example.com">sanket@example.com</a></p>
+  </footer>
 <script type="text/javascript" src="./script.js">
 </script>
 </body>
